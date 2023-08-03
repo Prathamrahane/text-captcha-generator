@@ -1,0 +1,13 @@
+import random
+username=input("enter username=")
+pwd=input("enter password")
+if(username=='test' and pwd=='1234'):
+    num=random.randint(1000,9999)
+    print("enter this 4 digit numbers:",num)
+    user_num=int(input())
+    if(num==user_num):
+        print("login successfully")
+    else:
+        print("print failed")
+else:
+    print("login failed")
